@@ -45,7 +45,6 @@
 
 * Fully open-source observability platform.
 * Visualizes error stacktraces.
-* Built around OpenTelemetry.
 
 **Cons:**
 
