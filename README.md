@@ -40,6 +40,7 @@
 
 
 ## **SigNoz**
+[signoz.io](https://signoz.io)
 ![SigNoz Screenshot](img3.png)
 **Pros:**
 
