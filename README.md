@@ -1,7 +1,5 @@
 # Available Self-Hosted APM Tool Analysis
 
----
-
 ## **Sentry**
 
 ![Sentry Screenshot](img1.png)
@@ -23,7 +21,6 @@
 
 **License:** [Functional Source License (FSL)](https://www.tldrlegal.com/license/functional-source-license-fsl)
 
----
 
 ## **Elastic APM**
 
@@ -40,7 +37,6 @@
 
 **License:** Mix of [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license) and [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
----
 
 ## **SigNoz**
 
