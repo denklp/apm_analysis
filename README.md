@@ -70,7 +70,7 @@
 
 # Conclusions
 
-From my perspective, **Sentry** is the tool that suits us best:
+ **Sentry** looks like the tool that suits us best:
 - **Code snippets available in report** - eases detection of error cause
 - **Best observability for developers** — all error/exception-related information is centralized, with source code immediately visible.
 - **No need for custom visualizations** — everything works out-of-the-box.
@@ -78,6 +78,7 @@ From my perspective, **Sentry** is the tool that suits us best:
 - **Widely adopted** with a large and active community.
 - **Comfortable license** — currently under the Functional Source License, and set to transition to **Apache 2.0** in two years.
 
+Depending on strategy, we still can go with Elastic APM or OTEL based solutions.
 
 ## Next Steps
 
