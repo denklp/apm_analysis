@@ -60,7 +60,6 @@
 **Pros:**
 
 * Grafana is already in use within the company.
-* Flexible and highly customizable dashboards.
 
 **Cons:**
 
