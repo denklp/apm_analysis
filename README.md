@@ -1,58 +1,82 @@
-Available self-hosted APM tool analysis
+# Available Self-Hosted APM Tool Analysis
 
-Sentry
-image1.jpg
-Pros:
-Issue-centric views and dashboards - developers can easily investigate error cause.
-Not only stacktrace, but also code which generated error.
-Can be added to grafana with link to sentry detailed error overview. - https://sentry.io/integrations/grafana/
-Active development of SDK/self-hosted: 
-https://github.com/getsentry/self-hosted - ui/processing
-https://github.com/getsentry/sentry-python - python SDK
+---
 
-Cons:
-Don't looks like future instrumentation of choice like CNCF OTEL, but still it's open source, so not a big concern.
+## **Sentry**
 
-License: https://www.tldrlegal.com/license/functional-source-license-fsl
+![Sentry Screenshot](img1.png)
 
+**Pros:**
 
-Elastic APM
+* Issue-centric views and dashboards — makes it easy for developers to investigate the root cause of errors.
+* Exact code snippet that caused the error.
+* Can be integrated into Grafana via link-outs to detailed error views.
+  [Sentry Grafana Integration](https://sentry.io/integrations/grafana/)
+* Active development of both SDKs and self-hosted deployment:
 
-Pros:
-Another well known observability tool
-Can visualize error stacktrace.
+  * [Self-hosted repo (UI, processing)](https://github.com/getsentry/self-hosted)
+  * [Python SDK](https://github.com/getsentry/sentry-python)
 
-Cons:
-Questionable licensing - some feature can be still payable
-More sophisticated self-hosted installation
-Less adoption of APM modules
+**Cons:**
 
+* Not aligned with CNCF's OpenTelemetry vision for the future of instrumentation, but still open-source and well-maintained — not a major concern.
 
+**License:** [Functional Source License (FSL)](https://www.tldrlegal.com/license/functional-source-license-fsl)
 
-License: mix of Elastic License 2.0 and Apache License 2.0
+---
 
+## **Elastic APM**
 
-SigNoz
-Pros:
-Open source observability tool
-Can visualize error stacktrace.
+**Pros:**
 
-Cons:
-OTEL instrumentation - can be more sophisticated
-Still less adoption than sentry
+* Established and popular observability platform.
+* Supports error stacktrace visualization.
 
-License: MIT
+**Cons:**
 
-Grafana + OTEL + custom panels
-Pros:
-Already in use in company
+* Questionable licensing — some features may require a commercial license.
+* More complex to deploy and manage in self-hosted environments.
+* Lower adoption of its APM components compared to general Elastic stack usage.
 
+**License:** Mix of [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license) and [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-Cons:
-To get Sentry level of error observability, a lot of work needs to be done
-OTEL instrumentation - can be more sophisticated
+---
 
-License: mix of open-source licenses 
+## **SigNoz**
+
+**Pros:**
+
+* Fully open-source observability platform.
+* Visualizes error stacktraces.
+* Built around OpenTelemetry.
+
+**Cons:**
+
+* Requires OpenTelemetry instrumentation, which can be more involved compared to native SDKs like Sentry.
+* Still a growing project — smaller community and adoption than Sentry.
+
+**License:** [MIT License](https://opensource.org/licenses/MIT)
+
+---
+
+## **Grafana + OpenTelemetry + Custom Panels**
+
+**Pros:**
+
+* Grafana is already in use within the company.
+* Flexible and highly customizable dashboards.
+
+**Cons:**
+
+* Achieving the same level of error visibility as Sentry (e.g., code context, user info, breadcrumbs) requires significant custom implementation.
+* OpenTelemetry instrumentation adds complexity and learning curve.
+
+**License:** Combination of open-source licenses depending on the stack (Grafana: AGPLv3, OTEL: Apache 2.0, etc.)
+
+---
+
+Would you like this comparison added as a downloadable PDF or included in your internal documentation?
+
 
 
 | Feature / Tool            | Sentry (Self-hosted)                  | Elastic APM                       | SigNoz (OTEL)          | OTEL + Grafana     |
@@ -70,4 +94,5 @@ Ease of instrumentation. No overhead with OTEL.
 Widely used, big community. 
 Quite comfortable license, which will in 2 years switch to Apache 2.0.
 
-If Sentry is approved - next step is POC. If everything fits our needs - then documentation and implementation.
+If Sentry is approved - next step is POC to prove it works as intended with our language/framework of choice. 
+If everything fits our needs - then documentation and implementation.
