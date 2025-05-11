@@ -78,7 +78,9 @@
 - **Widely adopted** with a large and active community.
 - **Comfortable license** — currently under the Functional Source License, and set to transition to **Apache 2.0** in two years.
 
-Depending on strategy, we still can go with Elastic APM or OTEL based solutions.
+Depending on strategy, we can go with OTEL based solutions, as OTEL is vendor neutral. 
+Maybe something like [zero code OTEL](https://opentelemetry.io/docs/zero-code/python/) . 
+However it could take more time in general to implement OTEL and get ease of use for developers in UI part.
 
 ## Next Steps
 
@@ -93,5 +95,4 @@ Depending on strategy, we still can go with Elastic APM or OTEL based solutions.
 |---------------------------|----------------------------------------|-----------------------------------|--------------------------------------|----------------------------------------|
 | Supported Languages       | Python, Rust (official SDKs)          | Python only  (SDK)                      | Python, Rust              | Python, Rust                |
 | Error Code context      | yes, part of code included         | no, only codeline | no, only codeline             | no, only codeline    |
-| Instrumentation Complexity          | Easy, SDK   | Easy, SDK | Medium to hard, OTEL instrumentation | Medium to hard, OTEL instrumentation |
 | Licensing                 | Functional Source License (if non-compete, then free for use)              | Elastic license v2 (some parts paid) | MIT     | mix of open-source licenses                      |
