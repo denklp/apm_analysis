@@ -34,7 +34,7 @@
 * Questionable licensing — some features may require a commercial license.
 * More complex to deploy and manage in self-hosted environments.
 * Lower adoption of its APM components compared Sentry SDKs/OTEL.
-* Not aligned with CNCF's OpenTelemetry vision for the future of instrumentation, but still open-source and well-maintained
+* Not aligned with CNCF's OpenTelemetry vision for the future of instrumentation, but still open-source 
 
 **License:** Mix of [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license) and [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
