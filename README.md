@@ -53,7 +53,6 @@
 
 **License:** [MIT License](https://opensource.org/licenses/MIT)
 
----
 
 ## **Grafana + OpenTelemetry + Custom Panels**
 
@@ -69,9 +68,7 @@
 
 **License:** Combination of open-source licenses depending on the stack (Grafana: AGPLv3, OTEL: Apache 2.0, etc.)
 
----
 
-Would you like this comparison added as a downloadable PDF or included in your internal documentation?
 
 
 
@@ -79,7 +76,7 @@ Would you like this comparison added as a downloadable PDF or included in your i
 |---------------------------|----------------------------------------|-----------------------------------|--------------------------------------|----------------------------------------|
 | Supported Languages       | Python, Rust (official SDKs)          | Python only  (SDK)                      | Python, Rust              | Python, Rust                |
 | Error Code context      | yes, part of code included         | no, only codeline | no, only codeline             | no, only codeline    |
-| Instrumentation Complexity          | Easy, SDK   | Easy-Medium, SDK | Medium-Hard, OTEL instrumentation | Medium-Hard, OTEL instrumentation |
+| Instrumentation Complexity          | Easy, SDK   | Easy, SDK | Medium to hard, OTEL instrumentation | Medium to hard, OTEL instrumentation |
 | Licensing                 | Functional Source License (if non-compete, then free for use)              | Elastic license v2 (some parts paid) | MIT     | mix of open-source licenses                      |
 
 
