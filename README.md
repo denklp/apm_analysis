@@ -1,4 +1,4 @@
-| Feature / Tool            | Sentry (Self-hosted)                  | Elastic APM                       | SigNoz (via OpenTelemetry)           | OpenTelemetry + Grafana Stack          |
+| Feature / Tool            | Sentry (Self-hosted)                  | Elastic APM                       | SigNoz (OTEL)          | OTEL + Grafana     |
 |---------------------------|----------------------------------------|-----------------------------------|--------------------------------------|----------------------------------------|
 | Supported Languages       | Python, Rust (official SDKs)          | Python only                       | Python, Rust (via OTEL)              | Python, Rust (via OTEL)                |
 | Error Tracking            | Full stacktrace, breadcrumbs, code context | Basic exception info           | Via OTEL, basic stacktrace           | Requires manual setup                  |
