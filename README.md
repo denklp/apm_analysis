@@ -68,7 +68,23 @@
 
 **License:** Combination of open-source licenses depending on the stack (Grafana: AGPLv3, OTEL: Apache 2.0, etc.)
 
+# Conclusions
 
+From my perspective, **Sentry** is the tool that suits us best:
+- **Code snippets available in report** - eases detection of error cause
+- **Best observability for developers** — all error/exception-related information is centralized, with source code immediately visible.
+- **No need for custom visualizations** — everything works out-of-the-box.
+- **Ease of instrumentation** — no additional complexity from OpenTelemetry.
+- **Widely adopted** with a large and active community.
+- **Comfortable license** — currently under the Functional Source License, and set to transition to **Apache 2.0** in two years.
+
+
+## Next Steps
+
+- If **Sentry is approved**, the next step is to run a **proof of concept (POC)** to ensure it works as intended with our primary languages and frameworks.
+- If the POC is successful and the tool meets our needs:
+  - Proceed with **internal documentation**
+  - Begin **implementation and rollout**
 
 
 
