@@ -48,7 +48,8 @@
 
 **Cons:**
 
-* Requires OpenTelemetry instrumentation, which can be more involved compared to native SDKs like Sentry.
+* OpenTelemetry instrumentation adds complexity, compared to native SDKs like Sentry.
+* Lesser level of error visibility compared to Sentry
 * Smaller community and adoption than Sentry.
 
 **License:** [MIT License](https://opensource.org/licenses/MIT)
@@ -64,7 +65,7 @@
 **Cons:**
 
 * Achieving the same level of error visibility as Sentry (e.g., code context, user info, breadcrumbs) requires significant custom implementation.
-* OpenTelemetry instrumentation adds complexity and learning curve.
+* OpenTelemetry instrumentation adds complexity, compared to native SDKs like Sentry.
 
 **License:** Combination of open-source licenses 
 
@@ -81,7 +82,7 @@ From my perspective, **Sentry** is the tool that suits us best:
 
 ## Next Steps
 
-- If **Sentry is approved**, the next step is to run a **proof of concept (POC)** to ensure it works as intended with our primary languages and frameworks.
+- If **Sentry is approved**, the next step is to run a **POC** to ensure it works as intended with our primary languages and frameworks.
 - If the POC is successful and the tool meets our needs:
   - Proceed with **internal documentation**
   - Begin **implementation and rollout**
