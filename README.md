@@ -23,7 +23,7 @@
 
 
 ## **Elastic APM**
-
+![Elastic APM Screenshot](img2.png)
 **Pros:**
 
 * Established and popular observability platform.
@@ -33,13 +33,13 @@
 
 * Questionable licensing — some features may require a commercial license.
 * More complex to deploy and manage in self-hosted environments.
-* Lower adoption of its APM components compared to general Elastic stack usage.
+* Lower adoption of its APM components compared Sentry SDKs/OTEL.
 
 **License:** Mix of [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license) and [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 
 ## **SigNoz**
-
+![SigNoz Screenshot](img3.png)
 **Pros:**
 
 * Fully open-source observability platform.
@@ -49,7 +49,7 @@
 **Cons:**
 
 * Requires OpenTelemetry instrumentation, which can be more involved compared to native SDKs like Sentry.
-* Still a growing project — smaller community and adoption than Sentry.
+* Smaller community and adoption than Sentry.
 
 **License:** [MIT License](https://opensource.org/licenses/MIT)
 
@@ -66,7 +66,7 @@
 * Achieving the same level of error visibility as Sentry (e.g., code context, user info, breadcrumbs) requires significant custom implementation.
 * OpenTelemetry instrumentation adds complexity and learning curve.
 
-**License:** Combination of open-source licenses depending on the stack (Grafana: AGPLv3, OTEL: Apache 2.0, etc.)
+**License:** Combination of open-source licenses 
 
 # Conclusions
 
@@ -94,14 +94,3 @@ From my perspective, **Sentry** is the tool that suits us best:
 | Error Code context      | yes, part of code included         | no, only codeline | no, only codeline             | no, only codeline    |
 | Instrumentation Complexity          | Easy, SDK   | Easy, SDK | Medium to hard, OTEL instrumentation | Medium to hard, OTEL instrumentation |
 | Licensing                 | Functional Source License (if non-compete, then free for use)              | Elastic license v2 (some parts paid) | MIT     | mix of open-source licenses                      |
-
-
-From my perspective, Sentry is the tool that suits us best:
-Best observability for developers - all error/exception related information in one place with code instantly available.
-No need to create custom visualisations - all should work from the box.
-Ease of instrumentation. No overhead with OTEL.
-Widely used, big community. 
-Quite comfortable license, which will in 2 years switch to Apache 2.0.
-
-If Sentry is approved - next step is POC to prove it works as intended with our language/framework of choice. 
-If everything fits our needs - then documentation and implementation.
